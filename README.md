@@ -1,6 +1,6 @@
 # kubernetes-s3-mysql-backup
 
-kubernetes-s3-mysql-backup is a container image based on Alpine Linux. This container is designed to run in Kubernetes as a cronjob to perform automatic backups of MySQL databases to Amazon S3. It was created to meet my requirements for regular and automatic database backups. Having started with a relatively basic feature set, it is gradually growing to add more and more features.
+kubernetes-s3-mysql-backup is a container image based on Alpine Linux. This container is designed to run in Kubernetes as a cronjob to perform automatic backups of MySQL databases to Cloudflare R2. It was created to meet my requirements for regular and automatic database backups. Having started with a relatively basic feature set, it is gradually growing to add more and more features.
 
 Currently, kubernetes-s3-mysql-backup supports the backing up of MySQL Databases. It can perform backups of multiple MySQL databases from a single database host. When triggered, a full database dump is performed using the `mysqldump` command for each configured database. The backup(s) are then uploaded to an Amazon S3 Bucket. kubernetes-s3-mysql-backup features Slack Integration, and can post messages into a channel detailing if the backup(s) were successful or not.
 
