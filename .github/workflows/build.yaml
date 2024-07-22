@@ -31,4 +31,4 @@ jobs:
         with:
           push: true
           file: Dockerfile
-          tags: ghcr.io/enxservices/enxnet-go/k8s-backup-mysql:latest
+          tags: ghcr.io/enxservices/k8s-backup-mysql:latest
