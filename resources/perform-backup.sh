@@ -59,6 +59,8 @@ else
     # If Slack alerts are enabled, send a notification that all database backups were successful
     if [ "$NOTIFY_ENABLED" = "true" ]
     then
+        echo -e "Slack alerts are enabled, sending notification..."
+
         /notify.sh "Backup created: $backup_name"
     fi
 
